@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Table{% endblock %}
+
+{% block content %}
+<div><br>
+  <div class="container">
+
+    <p class="mb-5" align="center">Hello there, Welcome to kharcha kam.<br>
+    We are here to save you some money, just enter the name of the product that you want to buy<br>
+    We will search your product on Amazon and Flipkart, then show them at the same place. </p>
+    
+    <form action="/" method="post">
+      <h3 align="center">Enter the name of Product:&nbsp &nbsp &nbsp 
+      <input type="text" name="nm" placeholder=""/>
+      <input type="submit" value="Compare"></h3>
+    </form>
+
+    <h2>{{ key }}</h2>
+  </div>
+</div>
+{% endblock %}
